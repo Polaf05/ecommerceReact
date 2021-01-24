@@ -26,7 +26,7 @@ body{
 }
 header{
   grid-area:header ;
-  background-color: teal;
+  background-color:	plum;
 }
 main{
   grid-area: main;
@@ -34,7 +34,7 @@ main{
 }
 footer{
   grid-area: footer;
-  background-color: #203040;
+  background-color: #422c3f;
   color: whitesmoke;
 }
 /*common*/
@@ -43,7 +43,7 @@ a{
   text-decoration: none;
 }
 a:hover{
-  color: tomato;
+  color: 	#FFB6C1;
 }
 ul{
   padding:0;
@@ -78,7 +78,7 @@ button:hover{
   border: 0.1rem #404040 solid;
 }
 button.primary{
-  background-color: #f0c040;
+  background-color:	#FFB6C1;
 
 }
 button.block{
