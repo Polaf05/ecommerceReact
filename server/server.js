@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import productRouter from './router/productRouter.js';
 import userRouter from './router/userRouter.js';
 import dotenv from 'dotenv';
+import orderRouter from './router/orderRouter.js';
 
 
 dotenv.config();
@@ -19,6 +20,7 @@ mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/tamago', {
 
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
+app.use('/api/orders', orderRouter);
 
 app.get('/', (req, res)=>{
     res.send('Server is ready');
