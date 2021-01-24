@@ -2,12 +2,20 @@ import express from 'express';
 import mongoose from 'mongoose';
 import productRouter from './router/productRouter.js';
 import userRouter from './router/userRouter.js';
+import dotenv from 'dotenv';
+
+
+dotenv.config();
 const app= express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/tamago', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
 });
+
+
 
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
