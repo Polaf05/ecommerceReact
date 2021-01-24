@@ -1,7 +1,23 @@
+import bcrypt from 'bcryptjs';
+
 const data ={
+    users: [
+        {
+          name: 'kiben',
+          email: 'admin@example.com',
+          password: bcrypt.hashSync('123456', 8),
+          isAdmin: true,
+        },
+        {
+           //customer
+          name: 'Ralph',
+          email: 'user@example.com',
+          password: bcrypt.hashSync('123456', 8),
+          isAdmin: false,
+        },
+      ],
     products:[
         {
-            _id:"1",
             name:"John Allen",
             category: "Male",
             image: '/images/allen.jpg',
@@ -12,7 +28,6 @@ const data ={
             countInStock: 0
         },
         {
-            _id:"2",
             name:"Clea Bernadette",
             category: "Female",
             image: '/images/clea.jpg',
@@ -23,7 +38,6 @@ const data ={
             countInStock: 10
         },
         {
-            _id:"3",
             name:"Franz Arvae",
             category: "Male",
             image: '/images/franz.jpg',
@@ -34,7 +48,6 @@ const data ={
             countInStock: 10
         },
         {
-            _id:"4",
             name:"Jan Calvin",
             category: "Male",
             image: '/images/jc.jpg',
@@ -45,7 +58,6 @@ const data ={
             countInStock: 10
         },
         {
-            _id:"5",
             name:"Kevin Ralph Lauren",
             category: "Male",
             image: '/images/kevin.jpg',
