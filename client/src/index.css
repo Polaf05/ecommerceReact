@@ -169,6 +169,9 @@ img.large{
 .rating span:last-child{
   color: #404040;
 }
+.loading {
+  display: block !important;
+}
 .success{
   color:green;
 }
