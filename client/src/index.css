@@ -1,4 +1,3 @@
-
 html{
   font-size: 62.5%; /*16px x 62.5= 10 px=1 rem*/
   box-sizing: border-box;
@@ -134,7 +133,7 @@ img{
 img.small {
   max-width: 5rem;
   width: 100%;
-  height: 11rem;
+  height:11rem;
 }
 
 img.medium{
@@ -172,6 +171,7 @@ img.large{
 .loading {
   display: block !important;
 }
+
 .success{
   color:green;
 }
@@ -191,6 +191,14 @@ img.large{
   color: #a02020;
   background-color: #ffe0e0e0;
 }
+
+.alert-success {
+  color: #20a020;
+  background-color: #eeffe0;
+}
+
+
+
 .form {
   max-width: 60rem;
   margin: 0 auto;
@@ -202,7 +210,7 @@ img.large{
 }
 .form label {
   margin: 1rem 0;
-  
+ 
 }
 
 
